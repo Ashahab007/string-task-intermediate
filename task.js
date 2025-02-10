@@ -57,5 +57,24 @@ for (const element of phrase1ConArr) {
     newArr.unshift(element);
   }
 }
-
 console.log(newArr);
+
+/* *
+Task-4:
+If a given string has either x, replace x by y. if the given string has X, replace it by Y.
+
+Hint: You should be able to check whether x or X exists. After that, search online how to replace a character in a string.
+
+*/
+
+let sentence1 = "xX xX xXXx";
+
+if (
+  sentence1.includes("X".toUpperCase()) ||
+  sentence1.includes("x".toLowerCase())
+) {
+  sentence1 = sentence1.replaceAll("X", "Y").replaceAll("x", "y");
+  console.log(sentence1);
+} else {
+  console.log("Don't have any 'x' or 'X' ");
+}
