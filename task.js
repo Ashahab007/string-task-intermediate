@@ -78,3 +78,8 @@ if (
 } else {
   console.log("Don't have any 'x' or 'X' ");
 }
+
+/* *
+Task-5:
+Capitalize Every first Letter of each word in a String
+*/
