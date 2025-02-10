@@ -42,6 +42,7 @@ console.log("Upper Case 'A'", addUpA, "i.e", addUpA.length, "times");
 /* *
 Task-3:
 Check whether a string contains all the vowels a, e, i, o, u
+Note: to solve it correctly need to discuss with Programming Hero
 */
 
 let phrase1 = "Qick fox jmps over a big lazy dog daily.";
@@ -67,7 +68,7 @@ Hint: You should be able to check whether x or X exists. After that, search onli
 
 */
 
-let sentence1 = "xX xX xXXx";
+let sentence1 = "xX hi xX xXXx";
 
 if (
   sentence1.includes("X".toUpperCase()) ||
@@ -83,3 +84,21 @@ if (
 Task-5:
 Capitalize Every first Letter of each word in a String
 */
+
+let phrase2 = "quick fox jumps over a big lazy dog daily.";
+
+let phrase2Arr = phrase2.split(" ");
+// console.log(phrase2Arr);
+
+// console.log(phrase2Arr[0][0].toUpperCase() + phrase2Arr[0].slice(1));
+
+let upperCaseWord = "";
+for (let i = 0; i < phrase2Arr.length; i++) {
+  upperCaseWord =
+    upperCaseWord +
+    phrase2Arr[i][0].toUpperCase() +
+    phrase2Arr[i].slice(1) +
+    " ";
+}
+console.log(upperCaseWord);
+// console.log(typeof upperCaseWord.toString());
