@@ -1,5 +1,5 @@
 /* *
-Task-1:
+!Task-1:
 Count how many times a string has the letter a
 */
 
@@ -16,7 +16,7 @@ for (const element of senToArr) {
 console.log("The letter 'a' contains", addA.length, "times");
 
 /* *
-Task-2:
+!Task-2:
 Count how many times A string has the letter a or A. A very important TAsk.
 */
 
@@ -40,12 +40,11 @@ console.log("Lower Case 'a'", addLwa, "i.e", addLwa.length, "times");
 console.log("Upper Case 'A'", addUpA, "i.e", addUpA.length, "times");
 
 /* *
-Task-3:
+!Task-3:
 Check whether a string contains all the vowels a, e, i, o, u
-Note: to solve it correctly need to discuss with Programming Hero
 */
 
-let phrase1 = "Qick fox jmps over a big lazy dog daily.";
+let phrase1 = "Quick fox jumps over A big lazy dog daily.";
 let phrase1ConArr = phrase1.split("");
 // console.log(phrase1ConArr);
 
@@ -60,8 +59,22 @@ for (const element of phrase1ConArr) {
 }
 console.log(newArr);
 
+// or another solution
+
+if (
+  phrase1ConArr.includes("a".toLowerCase()) &&
+  phrase1ConArr.includes("e".toLowerCase()) &&
+  phrase1ConArr.includes("i".toLowerCase()) &&
+  phrase1ConArr.includes("o".toLowerCase()) &&
+  phrase1ConArr.includes("u".toLowerCase())
+) {
+  console.log("The phrase contains all the vowels.");
+} else {
+  console.log("One of the vowel is missing.");
+}
+
 /* *
-Task-4:
+!Task-4:
 If a given string has either x, replace x by y. if the given string has X, replace it by Y.
 
 Hint: You should be able to check whether x or X exists. After that, search online how to replace a character in a string.
@@ -81,7 +94,7 @@ if (
 }
 
 /* *
-Task-5:
+!Task-5:
 Capitalize Every first Letter of each word in a String
 */
 
