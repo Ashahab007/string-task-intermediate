@@ -44,20 +44,30 @@ console.log("Upper Case 'A'", addUpA, "i.e", addUpA.length, "times");
 Check whether a string contains all the vowels a, e, i, o, u
 */
 
-let phrase1 = "Quick fox jumps over A big lazy dog daily.";
+// !Solution: 1:
+let phrase1 = "Qick fox jmps over A big lazy dog daily.";
 let phrase1ConArr = phrase1.split("");
 // console.log(phrase1ConArr);
 
 let vowel = ["a", "e", "i", "o", "u"];
 
-let newArr = [];
-for (const element of phrase1ConArr) {
-  if (vowel.includes(element)) {
-    console.log(element);
-    newArr.unshift(element);
+for (const vol of vowel) {
+  if (phrase1.includes(vol)) {
+    console.log("All vowel exists");
+    break;
+  } else {
+    console.log("Not exists");
   }
 }
-console.log(newArr);
+
+//! Solution: 2 (best method)
+let hasAllVowels = "aeiou".split().every((val) => {
+  if (phrase1.includes(val)) {
+    console.log("All vowel exists");
+  } else {
+    console.log("Not all vowel exists");
+  }
+});
 
 // or another solution
 
