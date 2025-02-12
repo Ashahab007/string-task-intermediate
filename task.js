@@ -45,7 +45,7 @@ Check whether a string contains all the vowels a, e, i, o, u
 */
 
 // !Solution: 1:
-let phrase1 = "Qick fox jmps over A big lazy dog daily.";
+let phrase1 = "Qick fox jumps over A big lazy dog daily.";
 let phrase1ConArr = phrase1.split("");
 // console.log(phrase1ConArr);
 
@@ -61,13 +61,14 @@ for (const vol of vowel) {
 }
 
 //! Solution: 2 (best method)
-let hasAllVowels = "aeiou".split().every((val) => {
-  if (phrase1.includes(val)) {
+let hasAllVowels = "aeiou".split("").every((val) => phrase1.includes(val));
+console.log(hasAllVowels);
+
+/* {
     console.log("All vowel exists");
   } else {
     console.log("Not all vowel exists");
-  }
-});
+  } */
 
 // or another solution
 
