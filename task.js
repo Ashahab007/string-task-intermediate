@@ -61,7 +61,7 @@ for (const vol of vowel) {
 }
 
 //! Solution: 2 (best method)
-let hasAllVowels = "aeiou".split("").every((val) => phrase1.includes(val)); //every method only allows boolean value so no if else allowed
+let hasAllVowels = "aeiou".split("").every((val) => phrase1.includes(val)); //Array.every method only allows boolean value so no if else allowed
 console.log(hasAllVowels);
 
 /* {
